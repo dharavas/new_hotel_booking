@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+ <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>THE MAJESTIK Hotels</title>
+    <link rel="icon" type="image/x-icon" href="social/favicon.ico">
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/style.css">
+    <link rel="stylesheet" media="screen and (max-width: 850px)" href="styles/handset_index.css">
+    <link rel="stylesheet" media="screen and (max-width: 650px)" href="styles/hamburger-menu.css">
+
+</head>
+
+<body>
+    <!-- Navbar -->
+    <div class="hamburger">
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
+    </div>
+    <div class="frontpage">
+
+        <div class="navbar">
+
+            <div id="logo1">
+
+                <img src="socials/logo.jpg" alt="">
+            </div>
+            <ul id="navbarmain">
+                <li>
+                    <a href="index.html">Home</a>
+                </li>
+                <li>
+                    <a href="#about">About</a>
+                </li>
+                <li>
+                    <a href="#kitchen">Kitchen</a>
+                </li>
+                <li>
+                    <a href="#rooms">Rooms</a>
+                </li>
+                <li>
+                    <a href="#contact">Contact Us</a>
+                </li>
+            </ul>
+
+
+            <div class="social">
+
+                <ul>
+                    <li>
+                        <a href="https://www.facebook.com/profile.php" target="_blank">
+
+                            <img src="socials/fb.png" alt="" id="fb">
+                        </a>
+
+
+                    </li>
+                    <li>
+                        <a href="https://www.instagram.com/" target="_blank">
+
+
+                            <img src="socials/ig.png" alt="" id="ig">
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://www.linkedin.com/" target="_blank">
+
+                            <img src="socials/lnkd.png" alt="" id="lnkd">
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://github.com/" target="_blank">
+
+                            <img src="socials/git.png" alt="" id="git">
+                        </a>
+                    </li>
+                </ul>
+
+            </div>
+
+
+        </div>
+        <!-- Frontpage -->
+        <div class="content">
+            Experience the Ultimate in Hospitality!
+            <br>
+            <div id="contentsum1">
+
+                Stay in Style, Stay with Us
+            </div>
+        </div>
+
+    </div>
+    <div >
+        <div class="row">
+        <h1 class="item-box auth-box">Welcome To The Majestik Hotel Payment Page</h1>
+		    <hr/>
+<form>
+
+    <form action="authorize_payment" method="post">
+    <table>
+        <tr>
+            <td>Room:</td>
+            <td><input type="text" name="product" value="Hotel Room" /></td>
+        </tr>
+        <tr>
+            <td>Sub Total:</td>
+            <td><input type="text" name="subtotal" value="100" /></td>
+        </tr>
+        <tr>
+            <td>Shipping:</td>
+            <td><input type="text" name="shipping" value="10" /></td>
+        </tr>    
+        <tr>
+            <td>Tax:</td>
+            <td><input type="text" name="tax" value="10" /></td>
+        </tr>    
+        <tr>
+            <td>Total Amount:</td>
+            <td><input type="text" name="total" value="120" /></td>
+        </tr>
+        <tr>
+            <td colspan="2" align="center">
+                <input type="submit" value="Checkout" />
+            </td>
+        </tr>
+    </table>
+    </form>
+   </form>
+</div>
+</div>
+    <footer>
+        Copyright &copy; team-hotel/theMajestikHotel All rights reserved.
+    </footer>
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script src="app.js"></script>
+
+</body>
+</html>

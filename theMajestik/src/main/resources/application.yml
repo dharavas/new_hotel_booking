@@ -1,0 +1,14 @@
+spring:
+  security:
+    oauth2:
+      client:
+        registration:
+         google:
+          clientId: 1078589056288-bo0d655lh83oalqgihjnerof47jkerpb.apps.googleusercontent.com
+          clientSecret: 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
+          scope:
+#           - email
+#           - profile
+paypal:
+  clientId: ATePs72ygJ0criT0AL8tDofOaE0ZWkdxyKfEjWk6ZMUgq7djxmRdjjaGns3qDG_Y4B1LWms8xRYCNibj
+  clientSecret: EIjxRrNNxLX3tJnDAVz9u3WPD9atmYPZrYmuYiX2rWuAa40grdcoWPKNjX1g84E2g4_IB8czWJYVk78D

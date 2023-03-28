@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1"/>
+    <title>User Login</title>
+    <style>
+        .center {    }
+
+    body {
+        background-repeat: no-repeat;
+    }
+
+    * {
+        font-family: "Helvetica", Georgia, Serif;
+        text-align: center;
+        background-color:  #d3d3d3;
+        color: #2f2f2f;
+    }
+
+    div {
+        border: 1px solid #e0e0e0;
+        border-radius: 10px;
+        display: inline-block;
+        width: 400px;
+        margin: 50px;
+        padding: 30px 0;
+        
+    }
+
+    input {
+        margin: 5px;
+        width: 200px;
+    }
+
+    .ititle {
+        color: red;
+    }
+
+    .pure-button {
+        font-family: inherit;
+        font-size: 100%;
+        padding: .5em 1em;
+        color: #444;
+        color: rgba(0, 0, 0, .8);
+        border: 1px solid #999;
+        border: none transparent;
+        background-color: gold;
+        text-decoration: none;
+        border-radius: 2px;
+    }
+
+    .button-success {
+        background: rgb(28, 184, 65); /* this is a green */
+    }
+
+    .itext {
+        outline-style: none;
+        border: 1px solid red;
+    }
+</style>
+        </head>
+<body>
+<div style="text-align: center">
+    <img src="./socials/logo.jpg" width="280" height="280"/>
+    <form action="/login" method="post" id="loginForm">
+        <label style="color: #8d0003" for="lname">User Name:</label><br/>
+        <input type="text" name="uname" id="uname"/><br/>
+        <label style="color: #8d0003" for="lname">Password:</label><br/>
+        <input type="password" name="upwd" id="upwd"/><br/>
+        <label style="color: #8d0003" for="lname">Email:</label><br/>
+        <input type="text" name="uemail" id="uemail"/><br/>
+        <label style="color: #8d0003" for="lname">Phone number:</label><br/>
+        <input type="text" name="uphone" id="uphone"/><br/>
+        <span id="msg" style="font-size: 12px;color:cadetblue"></span><br/>
+        <button type="button" id="loginBtn">Submit</button>
+        <button type="button" onclick="window.location.href='login.xhtml'">Back to login</button>
+    </form>
+</div>
+<script type="text/javascript" src="js/jquery-3.5.1.js"></script>
+<script type="text/javascript">
+    $("#loginBtn").click(function () {
+        //get username and password
+        var uname = $("#uname").val();
+        var upwd = $("#upwd").val();
+        if (isEmpty(uname)) {
+            $("#msg").html("user name can not be empty");
+            return;
+        }
+        if (isEmpty(upwd)) {
+            $("#msg").html("password can not be empty");
+            return;
+        }
+        $("#loginForm").submit();
+    });
+    //to know the string is null or not.
+    function isEmpty(str) {
+        if (str == null || str.trim() == "") {
+            return true;
+        }
+        return false;
+    }
+</script>
+</body>
+</html>
